@@ -127,7 +127,7 @@ export default function PersonalInjury() {
 
   return (
     <div className="flex flex-col min-h-dvh">
-      <header className="relative w-full bg-[url('/criminal-law-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      <header className="relative w-full bg-[url('/hero2.png')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-black/70" />
         <div className="container py-20 px-4 md:px-6 relative z-10 text-center text-white">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Personal Injury</h1>
@@ -156,7 +156,13 @@ export default function PersonalInjury() {
             </p>
           </div>
           <div className="mt-8 md:mt-0 md:w-1/2">
-            <img src="/placeholder.svg" alt="Team" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/criminalLaw.png" 
+              alt="Team" 
+              width={800}
+              height={400}
+              className="w-full h-auto rounded-lg"
+            />
           </div>
         </div>
       </section>
