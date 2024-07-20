@@ -4,6 +4,7 @@ import { useState, useEffect, MouseEvent } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { ArrowRightIcon, XIcon } from "@/components/icons"
 
 interface CardData {
   title: string
@@ -157,7 +158,7 @@ export default function PersonalInjury() {
           </div>
           <div className="mt-8 md:mt-0 md:w-1/2">
             <Image 
-              src="/criminalLaw.png" 
+              src="/personalInjury.png" 
               alt="Team" 
               width={800}
               height={400}
@@ -166,7 +167,7 @@ export default function PersonalInjury() {
           </div>
         </div>
       </section>
-        <section className="py-12 md:py-20">
+        <section className="py-12 md:py-20 bg-gray-400">
           <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {cardData.map((card, index) => (
               <div
@@ -178,8 +179,8 @@ export default function PersonalInjury() {
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-300 ease-in-out"
                   style={{ backgroundImage: `url(${card.image})` }}
                 />
-                <div className="absolute inset-0 bg-black/70 group-hover:bg-black/50 transition-colors duration-300 ease-in-out" />
-                <div className="relative z-10 p-6 text-white">
+                <div className="absolute inset-0 bg-gray-200 group-hover:bg-black/50 transition-colors duration-300 ease-in-out" />
+                <div className="relative z-10 p-6 text-black">
                   <h3 className="text-xl font-bold">{card.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed">{card.description}</p>
                   <Link
@@ -231,46 +232,5 @@ export default function PersonalInjury() {
         </div>
       )}
     </div>
-  )
-}
-
-function ArrowRightIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
-  )
-}
-
-
-function XIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
   )
 }

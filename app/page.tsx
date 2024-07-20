@@ -21,6 +21,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
+import { GavelIcon, BriefcaseIcon, ScaleIcon } from "@/components/icons";
 
 export default function Home() {
   const pathname = usePathname();
@@ -70,7 +71,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="practice" className="py-12 md:py-24 bg-muted">
+        <section id="practice" className="py-12 md:py-24 bg-gray-400">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center">Our Practice Areas</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
@@ -153,95 +154,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  );
-}
-
-interface IconProps {
-  className?: string;
-}
-
-function BriefcaseIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-      <rect width="20" height="14" x="2" y="6" rx="2" />
-    </svg>
-  );
-}
-
-function GavelIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" />
-      <path d="m16 16 6-6" />
-      <path d="m8 8 6-6" />
-      <path d="m9 7 8 8" />
-      <path d="m21 11-8-8" />
-    </svg>
-  );
-}
-
-function ScaleIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-      <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-      <path d="M7 21h10" />
-      <path d="M12 3v18" />
-      <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
-    </svg>
-  );
-}
-
-function XIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
   );
 }

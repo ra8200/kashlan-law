@@ -4,6 +4,7 @@ import { useState, useEffect, MouseEvent } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { ArrowRightIcon, XIcon } from "@/components/icons"
 
 interface CardData {
   title: string
@@ -97,7 +98,7 @@ export default function CriminalLaw() {
 
   return (
     <div className="flex flex-col min-h-dvh">
-      <header className="relative w-full bg-[url('/hero2.png)] bg-cover bg-center bg-no-repeat">
+      <header className="relative w-full bg-[url('/hero2.png')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-black/70" />
         <div className="container py-20 px-4 md:px-6 relative z-10 text-center text-white">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Criminal Law</h1>
@@ -127,7 +128,7 @@ export default function CriminalLaw() {
             </div>
             <div className="mt-8 md:mt-0 md:w-1/2">
               <Image 
-                src="/personalInjury.png" 
+                src="/criminalLaw.png" 
                 alt="Team" 
                 width={800}
                 height={400}
@@ -201,46 +202,5 @@ export default function CriminalLaw() {
         </div>
       )}
     </div>
-  )
-}
-
-function ArrowRightIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
-  )
-}
-
-
-function XIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
   )
 }
