@@ -1,19 +1,7 @@
-import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardDescription,
-    CardContent,
-  } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, } from "@/components/ui/card";
   import { Label } from "@/components/ui/label";
   import { Input } from "@/components/ui/input";
-  import {
-    Select,
-    SelectTrigger,
-    SelectValue,
-    SelectContent,
-    SelectItem,
-  } from "@/components/ui/select";
+  import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
   import { Textarea } from "@/components/ui/textarea";
   import { Button } from "@/components/ui/button";
   import { MapPinIcon, PhoneIcon, MailOpenIcon } from "@/components/icons";
@@ -31,18 +19,18 @@ import {
               <div className="flex gap-4">
                 <MapPinIcon className="h-6 w-6 text-muted-foreground" />
                 <p className="text-sm font-medium">
-                  123 Main Street, Suite 200
+                  1560 Warsaw Road
                   <br />
-                  Anytown, State 12345
+                  Roswell, Georgia 30076
                 </p>
               </div>
               <div className="flex gap-4">
                 <PhoneIcon className="h-6 w-6 text-muted-foreground" />
-                <p className="text-sm font-medium">(555) 123-4567</p>
+                <p className="text-sm font-medium">(770) 361-1746</p>
               </div>
               <div className="flex gap-4">
                 <MailOpenIcon className="h-6 w-6 text-muted-foreground" />
-                <p className="text-sm font-medium">info@lawfirm.com</p>
+                <p className="text-sm font-medium">k@kash.law</p>
               </div>
             </div>
           </div>

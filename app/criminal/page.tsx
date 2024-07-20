@@ -33,24 +33,30 @@ export default function CriminalLaw() {
   }
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, false)
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isOpen && !(event.target as HTMLElement).closest(".popup-content")) {
+        handleClosePopup()
+      }
+    }
+  
+    document.addEventListener("click", handleClickOutside, true) // use capture phase
     return () => {
-      document.removeEventListener("click", handleClickOutside, false)
+      document.removeEventListener("click", handleClickOutside, true)
     }
   }, [isOpen])
 
   const cardData: CardData[] = [
     {
-      title: "Criminal Defense",
+      title: "RICO & Gang",
       description:
         "Our criminal defense attorneys have extensive experience representing clients in a wide range of criminal matters, including felonies and misdemeanors.",
-      image: "/criminal-law-1.jpg",
+      image: "/rico.png",
     },
     {
       title: "Juvenile Offenses",
       description:
         "Our team understands the unique challenges and considerations involved in juvenile criminal cases, and we are committed to protecting the rights of young offenders.",
-      image: "/criminal-law-2.jpg",
+      image: "/juvenile.png",
     },
     {
       title: "White Collar Crimes",
@@ -190,7 +196,7 @@ export default function CriminalLaw() {
                 <h3 className="text-xl font-bold">{cardData[selectedCard].title}</h3>
                 <p className="mt-4 text-sm leading-relaxed">{cardData[selectedCard].description}</p>{" "}
                 <Link
-                  href="#"
+                  href="/contact"
                   className="mt-4 inline-flex items-center gap-2 text-sm font-medium hover:underline"
                   prefetch={false}
                 >

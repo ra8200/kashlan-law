@@ -44,13 +44,13 @@ export default function PersonalInjury() {
       title: "Car Accidents",
       description:
         "At Kashlan Law, we understand that car accidents can be life-altering. Our experienced attorneys are dedicated to helping victims of car accidents in the Northern District of Georgia. We fight to secure compensation for medical expenses, lost wages, and pain and suffering. Trust us to handle the legal complexities while you focus on recovery.",
-      image: "/criminal-law-1.jpg",
+      image: "/carAccident.png",
     },
     {
       title: "DUI Accidents",
       description:
         "DUI accidents often result in severe injuries and emotional trauma. At Kashlan Law, we aggressively pursue justice for victims of DUI accidents in Georgia. Our team works tirelessly to hold intoxicated drivers accountable and secure the compensation you deserve.",
-      image: "/criminal-law-2.jpg",
+      image: "/dui.png",
     },
     {
       title: "Truck Accidents",
@@ -220,7 +220,7 @@ export default function PersonalInjury() {
                 <h3 className="text-xl font-bold">{cardData[selectedCard].title}</h3>
                 <p className="mt-4 text-sm leading-relaxed">{cardData[selectedCard].description}</p>{" "}
                 <Link
-                  href="#"
+                  href="/contact"
                   className="mt-4 inline-flex items-center gap-2 text-sm font-medium hover:underline"
                   prefetch={false}
                 >

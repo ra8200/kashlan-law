@@ -1,32 +1,43 @@
+"use client";
+
 import Link from "next/link";
+import { MailIcon, PhoneIcon, LinkedinIcon, MapPinIcon } from "@/components/icons";
 
 export default function Footer() {
   return (
     <footer className="bg-muted py-8 md:py-12">
-      <div className="container mx-auto flex flex-col items-start justify-between gap-8 md:flex-row">
+      <div className="container mx-auto flex flex-col items-start justify-between gap-6 md:flex-row">
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center gap-2">
             <MailIcon className="h-5 w-5 text-muted-foreground" />
-            <a href="#" className="text-muted-foreground hover:underline">
-              info@example.com
+            <a href="k@kash.law" className="text-muted-foreground hover:underline">
+              k@kash.law
             </a>
           </div>
           <div className="flex items-center gap-2">
             <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-            <a href="#" className="text-muted-foreground hover:underline">
-              +1 (234) 567-890
+            <a href="+17703611746" className="text-muted-foreground hover:underline">
+              +1 (770) 361-1746
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPinIcon className="h-5 w-5 text-muted-foreground" />
+            <a href="https://www.google.com/maps/place/The+Raffaeli+Professional+Building,+1560+Warsaw+Rd,+Roswell,+GA+30076/@34.0373603,-84.3336258,17z/data=!3m1!4b1!4m6!3m5!1s0x88f574c705296c8f:0xea2f30385256a721!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11bw3ym_1n?entry=ttu" className="text-muted-foreground hover:underline">
+              1560 Warsaw Road
+              <br />
+              Roswell, GA 30076
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
-              <TwitterIcon className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
-              <LinkedinIcon className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
-              <GitlabIcon className="h-5 w-5" />
-            </Link>
+            {/* <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <PlaceHolderIcon className="h-5 w-5" />
+            </Link> */}
+            {/* <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <PlaceHolderIcon className="h-5 w-5" />
+            </Link> */}
+            {/* <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <PlaceHolderIcon className="h-5 w-5" />
+            </Link> */}
           </div>
         </div>
         <div className="flex flex-col items-end gap-4 text-xs text-muted-foreground">
@@ -43,127 +54,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
-}
-
-interface IconProps {
-  className?: string;
-}
-
-function GitlabIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m22 13.29-3.33-10a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.11.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-2.26 6.67H8.32L6.1 3.26a.42.42 0 0 0-.1-.18.38.38 0 0 0-.26-.08.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18L2 13.29a.74.74 0 0 0 .27.83L12 21l9.69-6.88a.71.71 0 0 0 .31-.83Z" />
-    </svg>
-  );
-}
-
-function LinkedinIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect width="4" height="12" x="2" y="9" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  );
-}
-
-function MailIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    </svg>
-  );
-}
-
-function PhoneIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-    </svg>
-  );
-}
-
-function TwitterIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-    </svg>
-  );
-}
-
-function XIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
   );
 }
