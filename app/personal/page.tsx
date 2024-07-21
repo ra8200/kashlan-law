@@ -49,7 +49,7 @@ export default function PersonalInjury() {
       <section className="container mx-auto py-16">
         <div className="flex flex-col items-center md:flex-row md:space-x-8">
           <div className="md:w-1/2">
-            <h2 className="text-2xl font-bold">About Us</h2>
+            <h2 className="text-2xl font-bold">What We Do</h2>
             <p className="mt-4 text-lg">
               Kashlan Law is a personal injury law firm dedicated to providing exceptional legal
               representation and support to individuals who have suffered injuries due to the negligence of others in Atlanta. With
@@ -74,7 +74,7 @@ export default function PersonalInjury() {
           </div>
         </div>
       </section>
-        <section className="py-12 md:py-20 bg-gray-400">
+        <section className="py-12 md:py-20">
           <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {personalCardData.map((card, index) => (
               <Card
