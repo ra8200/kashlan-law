@@ -8,55 +8,121 @@ interface CardData {
     {
       title: "RICO & Gang",
       description:
-        "Our criminal defense attorneys have extensive experience representing clients in a wide range of criminal matters, including felonies and misdemeanors.",
+        "At Kashlan Law, we provide expert legal defense for those accused of RICO and gang-related offenses in the Northern District of Georgia. Our attorneys are experienced in handling complex cases involving organized crime and are dedicated to protecting your rights and achieving the best possible outcome.",
       image: "/rico.png",
     },
     {
-      title: "Juvenile Offenses",
+      title: "Murder",
       description:
-        "Our team understands the unique challenges and considerations involved in juvenile criminal cases, and we are committed to protecting the rights of young offenders.",
+        "Facing murder charges can be one of the most daunting experiences. Kashlan Law offers robust defense strategies for clients accused of murder in Georgia. We work tirelessly to ensure your rights are protected throughout the legal process.",
       image: "/juvenile.png",
     },
     {
-      title: "White Collar Crimes",
+      title: "Battery",
       description:
-        "Our attorneys have extensive experience defending clients accused of white-collar crimes, such as fraud, embezzlement, and money laundering.",
+        "Battery charges require a strong defense. Our attorneys at Kashlan Law have extensive experience defending clients against battery charges, ensuring that every aspect of your case is meticulously examined.",
       image: "/criminal-law-3.jpg",
     },
     {
-      title: "Traffic Violations",
+      title: "Aggravated Assault",
       description:
-        "Our attorneys can assist you with a wide range of traffic violations, including DUI, reckless driving, and speeding tickets.",
+        "Aggravated assault charges can carry severe penalties. Kashlan Law provides aggressive legal defense for clients accused of aggravated assault, aiming to reduce charges and minimize consequences",
       image: "/criminal-law-4.jpg",
     },
     {
-      title: "Domestic Violence",
+      title: "Kidnapping",
       description:
-        "Our team understands the sensitive nature of domestic violence cases and provides compassionate and effective legal representation.",
+        "Kidnapping charges are serious and require a skilled defense team. At Kashlan Law, we work diligently to challenge the prosecution's evidence and protect your rights.",
       image: "/criminal-law-5.jpg",
     },
     {
-      title: "Drug Crimes",
+      title: "False Imprisonment",
       description:
-        "Our attorneys have extensive experience defending clients charged with drug-related offenses, including possession, distribution, and trafficking.",
+        "False imprisonment charges can have significant legal repercussions. Our attorneys are committed to providing a strong defense, aiming to achieve the best possible outcome for your case.",
       image: "/criminal-law-6.jpg",
     },
     {
-      title: "Expungement",
+      title: "Cruelty to Children",
       description:
-        "Our attorneys can assist you with expunging your criminal record, giving you a fresh start and improving your opportunities in life.",
+        "Accusations of cruelty to children are highly sensitive and complex. Kashlan Law offers compassionate and thorough defense strategies to protect your rights and reputation.",
       image: "/criminal-law-7.jpg",
     },
     {
-      title: "Probation Violations",
+      title: "Sex Offenses",
       description:
-        "If you have been accused of violating the terms of your probation, our attorneys can help you navigate the legal system and protect your rights.",
+        "Sex offense charges related to family violence are serious and can have long-lasting effects. Kashlan Law provides a rigorous defense to ensure your rights are upheld and your side of the story is heard.",
       image: "/criminal-law-8.jpg",
     },
     {
-      title: "Appeals",
+      title: "Burglary",
       description:
-        "Our experienced appellate attorneys can review your case and determine if there are grounds for an appeal, ensuring that your rights are fully protected.",
+        "Charges of entering an auto with intent to commit theft are serious. Our attorneys are experienced in defending clients against these charges, working to protect your rights and achieve favorable outcomes.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Entering Auto",
+      description:
+        "Charges of entering an auto with intent to commit theft are serious. Our attorneys are experienced in defending clients against these charges, working to protect your rights and achieve favorable outcomes.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Theft",
+      description:
+        "Theft charges can vary in severity. Kashlan Law offers comprehensive legal defense for all types of theft charges, from petty theft to grand larceny, ensuring your case is handled with the utmost care.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Forgery",
+      description:
+        "Forgery charges require a meticulous defense approach. At Kashlan Law, our attorneys are skilled in defending clients against forgery charges, challenging the evidence and protecting your rights.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Identity Fraud",
+      description:
+        "Identity fraud charges can have serious implications. Our legal team at Kashlan Law is experienced in defending clients against identity fraud charges, striving to secure the best possible outcome.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Financial Credit Card Fraud",
+      description:
+        "Financial credit card fraud charges are complex and require specialized legal knowledge. Kashlan Law provides expert defense strategies to protect your rights and fight for a favorable resolution.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Criminal Trespass",
+      description:
+        "Charges of criminal damage to property require a strong defense. Kashlan Law offers experienced legal representation to defend against these charges, aiming to minimize penalties and protect your future.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Obstructing Law Enforcement",
+      description:
+        "Obstructing law enforcement charges can complicate your legal situation. Our team at Kashlan Law provides robust defense strategies to challenge these charges and protect your rights.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Terroristic Threats and Acts",
+      description:
+        "Charges of terroristic threats and acts are taken very seriously. Kashlan Law offers aggressive defense strategies to ensure your rights are defended and to work towards the best possible outcome.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Possession of a Firearm by Convicted Felon",
+      description:
+        "Being charged with possession of a firearm by a convicted felon can result in severe penalties. Kashlan Law provides experienced legal defense to protect your rights and fight for a favorable resolution.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Trafficking & Intent to Distribute",
+      description:
+        "Charges of drug trafficking and intent to distribute require an aggressive defense. Our attorneys at Kashlan Law are experienced in handling these complex cases, working to secure the best possible outcome for our clients.",
+      image: "/criminal-law-9.jpg",
+    },
+    {
+      title: "Possession of Illicit Substances",
+      description:
+        "Possession of illicit substances charges can have serious legal consequences. Kashlan Law offers expert defense strategies to challenge these charges and protect your future.",
       image: "/criminal-law-9.jpg",
     },
   ];
