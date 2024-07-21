@@ -26,24 +26,18 @@ export default function CriminalLaw() {
     setSelectedCard(null)
   }
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = (event: Event) => {
     if (isOpen && !(event.target as HTMLElement).closest(".popup-content")) {
       handleClosePopup()
     }
   }
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (isOpen && !(event.target as HTMLElement).closest(".popup-content")) {
-        handleClosePopup()
-      }
-    }
-  
-    document.addEventListener("click", handleClickOutside, true) // use capture phase
+    document.addEventListener("click", handleClickOutside, true)
     return () => {
       document.removeEventListener("click", handleClickOutside, true)
     }
-  }, [isOpen])
+  })
 
   const cardData: CardData[] = [
     {

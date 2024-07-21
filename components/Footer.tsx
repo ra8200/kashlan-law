@@ -16,8 +16,8 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-            <a href="+17703611746" className="text-muted-foreground hover:underline">
-              +1 (770) 361-1746
+            <a href="+14044968178" className="text-muted-foreground hover:underline">
+              +1 (404) 496-8178
             </a>
           </div>
           <div className="flex items-center gap-2">

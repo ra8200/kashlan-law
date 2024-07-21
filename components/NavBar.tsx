@@ -48,7 +48,7 @@ export default function NavBar() {
             prefetch={false}
           >
             <PhoneIcon className="w-4 h-4" />
-            +1 (770) 361-1746
+            +1 (404) 496-8178
           </Link>
         </nav>
         <Sheet>
@@ -87,12 +87,12 @@ export default function NavBar() {
             </div>
             <div className="mt-auto">
               <Link
-                href="tel:+17703611746"
+                href="tel:+14044968178"
                 className="inline-flex w-full items-center gap-2 h-9 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="w-4 h-4" />
-                (770)361-1746
+                (404)496-8179
               </Link>
             </div>
           </SheetContent>

@@ -26,18 +26,18 @@ export default function PersonalInjury() {
     setSelectedCard(null)
   }
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = (event: Event) => {
     if (isOpen && !(event.target as HTMLElement).closest(".popup-content")) {
       handleClosePopup()
     }
   }
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, false)
+    document.addEventListener("click", handleClickOutside, true)
     return () => {
-      document.removeEventListener("click", handleClickOutside, false)
+      document.removeEventListener("click", handleClickOutside, true)
     }
-  }, [isOpen])
+  })
 
   const cardData: CardData[] = [
     {
@@ -179,7 +179,7 @@ export default function PersonalInjury() {
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-300 ease-in-out"
                   style={{ backgroundImage: `url(${card.image})` }}
                 />
-                <div className="absolute inset-0 bg-gray-200 group-hover:bg-black/50 transition-colors duration-300 ease-in-out" />
+                <div className="absolute inset-0 bg-gray-200 group-hover:bg-gray-600 transition-colors duration-300 ease-in-out" />
                 <div className="relative z-10 p-6 text-black">
                   <h3 className="text-xl font-bold">{card.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed">{card.description}</p>

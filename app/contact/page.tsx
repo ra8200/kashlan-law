@@ -26,7 +26,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, } from "@/co
               </div>
               <div className="flex gap-4">
                 <PhoneIcon className="h-6 w-6 text-muted-foreground" />
-                <p className="text-sm font-medium">(770) 361-1746</p>
+                <p className="text-sm font-medium">(404) 496-46</p>
               </div>
               <div className="flex gap-4">
                 <MailOpenIcon className="h-6 w-6 text-muted-foreground" />
