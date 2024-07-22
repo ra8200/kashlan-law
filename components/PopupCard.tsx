@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { XIcon, ArrowRightIcon } from '@/components/icons';
+import {  ArrowRightIcon } from '@/components/icons';
 
 
 interface PopupCardProps {
@@ -10,18 +10,14 @@ interface PopupCardProps {
   title: string;
   description: string;
   image: string;
-  onClose: () => void;
 }
 
-const PopupCard: React.FC<PopupCardProps> = ({ isOpen, title, description, image, onClose }) => {
+const PopupCard: React.FC<PopupCardProps> = ({ isOpen, title, description, image }) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
       <div className="relative bg-white rounded-lg popup-content max-w-2xl">
-        <Button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700" onClick={onClose}>
-          <XIcon className="w-6 h-6" />
-        </Button>
         <div className="group relative rounded-lg overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-300 ease-in-out"
