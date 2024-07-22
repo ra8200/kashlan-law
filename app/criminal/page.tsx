@@ -50,18 +50,13 @@ export default function CriminalLaw() {
         <section className="container mx-auto py-16">
           <div className="flex flex-col items-center md:flex-row md:space-x-8">
             <div className="md:w-1/2">
-              <h2 className="text-2xl font-bold">About Us</h2>
+              <h2 className="text-2xl font-bold">What We Do</h2>
               <p className="mt-4 text-lg">
-                Kashlan Law is a personal injury law firm dedicated to providing exceptional legal
-                representation and support to individuals who have suffered injuries due to the negligence of others in Atlanta. With
-                a strong commitment to justice and a track record of success, our firm has become a trusted ally for those
-                in need of legal assistance in personal injury cases.
+                Kashlan Law is a leading criminal defense firm committed to providing exceptional legal representation for individuals facing criminal charges in the Northern District of Georgia, including Atlanta. Our experienced attorneys are dedicated to protecting your rights and ensuring a fair trial. With a deep understanding of the legal system and a proven track record of success, in Atlanta, Georgia, we have become a trusted advocate for those in need of a robust defense against criminal allegations.
               </p>
               <h2 className="mt-8 text-2xl font-bold">Our Mission</h2>
               <p className="mt-4 text-lg">
-                At Kashlan Law, our mission is clear: to help victims of personal injury seek the compensation and
-                justice they deserve. We believe that everyone deserves a voice in the legal system, and we are dedicated
-                to being that voice for our clients.
+                At Kashlan Law, we believe in the fundamental principle that every individual, is innocent until proven guilty. Our mission is to defend your rights and ensure you receive a fair and just legal process. Specializing in a wide range of criminal defense cases, from violent crimes to financial fraud, our team is equipped with the knowledge and experience to navigate the complexities of the criminal justice system. We are committed to providing personalized and aggressive defense strategies to achieve the best possible outcome for our clients.
               </p>
             </div>
             <div className="mt-8 md:mt-0 md:w-1/2">
@@ -77,6 +72,7 @@ export default function CriminalLaw() {
         </section>
         <section className="py-12 md:py-20">
           <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="mt-8 text-2xl font-bold">Areas of Practice</h2>
             {criminalCardData.map((card, index) => (
               <Card
                 key={index}
