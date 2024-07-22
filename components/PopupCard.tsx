@@ -28,11 +28,21 @@ const PopupCard: React.FC<PopupCardProps> = ({ isOpen, title, description, image
             style={{ backgroundImage: `url(${image})` }}
           />
           <div className="absolute inset-0 bg-black/70 group-hover:bg-black/50 transition-colors duration-300 ease-in-out" />
-          <Image src="/placeholder.svg" alt={title} width={800} height={400} className="w-full h-auto" />
+          <Image 
+            src="/placeholder.svg"
+            alt={title} 
+            width={800}
+            height={400} 
+            className="w-full h-auto" 
+          />
           <div className="relative z-10 p-6 text-white">
             <h3 className="text-xl font-bold">{title}</h3>
             <p className="mt-4 text-sm leading-relaxed">{description}</p>
-            <Link href="/contact" className="mt-4 inline-flex items-center gap-2 text-sm font-medium hover:underline" prefetch={false}>
+            <Link 
+              href="/contact" 
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium hover:underline" 
+              prefetch={false}
+            >
               Get a Free Consultation <ArrowRightIcon className="w-4 h-4" />
             </Link>
           </div>

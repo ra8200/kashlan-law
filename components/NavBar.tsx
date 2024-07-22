@@ -13,12 +13,20 @@ export default function NavBar() {
   return (
     <header className="w-full bg-background border-b">
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2" prefetch={false}>
+        <Link 
+          href="/"
+          className="flex items-center gap-2"
+          prefetch={false}
+        >
           <ScaleIcon className="w-6 h-6 text-primary" />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/about" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link 
+            href="/about"
+            className="text-muted-foreground hover:text-foreground"
+            prefetch={false}
+          >
             About Us
           </Link>
           <DropdownMenu>
@@ -60,7 +68,10 @@ export default function NavBar() {
           </SheetTrigger>
           <SheetContent side="right" className="md:hidden">
             <div className="grid gap-4 p-4">
-              <Link href="/about" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+              <Link 
+                href="/about" className="text-muted-foreground hover:text-foreground" 
+                prefetch={false}
+              >
                 About Us
               </Link>
               <DropdownMenu>
