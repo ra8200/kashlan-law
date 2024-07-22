@@ -14,7 +14,7 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh">
       <main className="flex-1">
         <section className="relative w-full h-[60vh] md:h-[80vh] bg-[url('/hero.png')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/40" />
           <div className="relative h-full flex flex-col items-center justify-center text-center text-primary-foreground px-4 md:px-6">
             <h1 className="text-4xl md:text-6xl font-bold">Kashlan Law</h1>
             <div className="text-lg md:text-2xl mt-4">
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <Link
               href="/contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 mt-4"
+              className="inline-flex h-10 items-center justify-center rounded-md text-black bg-white px-8 text-sm font-medium text-black-foreground shadow transition-colors hover:bg-gray-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 mt-4"
               prefetch={false}
             >
               Contact Us
