@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
+import ContactForm from "@/components/ContactForm";
 
 export default function About() {
   const pathname = usePathname() || "/";
@@ -59,7 +60,16 @@ export default function About() {
             </div>
           </div>
         </div>
+        <section className="py-12 md:py-24 bg-background">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold text-center">Contact Us</h2>
+            <div className="max-w-md mx-auto mt-8">
+              <ContactForm />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
+    
   )
 }

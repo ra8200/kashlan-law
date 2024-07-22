@@ -5,6 +5,7 @@ import Image from "next/image"
 import Card from "@/components/Cards"
 import PopupCard from "@/components/PopupCard"
 import personalCardData from "@/data/personalCards"
+import ContactForm from "@/components/ContactForm";
 
 export default function PersonalInjury() {
   const [isOpen, setIsOpen] = useState(false)
@@ -85,6 +86,14 @@ export default function PersonalInjury() {
                 onClick={() => handleCardClick(index)}
               />
             ))}
+          </div>
+        </section>
+        <section className="py-12 md:py-24 bg-background">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold text-center">Contact Us</h2>
+            <div className="max-w-md mx-auto mt-8">
+              <ContactForm />
+            </div>
           </div>
         </section>
       </main>
