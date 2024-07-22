@@ -104,7 +104,6 @@ export default function PersonalInjury() {
           title={personalCardData[selectedCard].title}
           description={personalCardData[selectedCard].description}
           image={personalCardData[selectedCard].image}
-          onClose={handleClosePopup}
         />
       )}
     </div>

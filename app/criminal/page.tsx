@@ -26,7 +26,7 @@ export default function CriminalLaw() {
       handleClosePopup()
     }
   }
-
+  
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true)
     return () => {
@@ -99,7 +99,6 @@ export default function CriminalLaw() {
           title={criminalCardData[selectedCard].title}
           description={criminalCardData[selectedCard].description}
           image={criminalCardData[selectedCard].image}
-          onClose={handleClosePopup}
         />
       )}
     </div>
