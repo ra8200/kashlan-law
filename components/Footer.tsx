@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { MailIcon, PhoneIcon, LinkedinIcon, MapPinIcon } from "@/components/icons";
+import { Button } from "./ui/button";
 
 export default function Footer() {
   return (
@@ -10,15 +11,21 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center gap-2">
             <MailIcon className="h-5 w-5 text-muted-foreground" />
-            <a href="k@kash.law" className="text-muted-foreground hover:underline">
+            <Button 
+              onClick={() => window.location.href = 'mailto:k@kash.law'} 
+              className="text-muted-foreground hover:underline bg-muted"
+            >
               k@kash.law
-            </a>
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-            <a href="+14044968178" className="text-muted-foreground hover:underline">
+            <Button 
+              onClick={() => window.location.href = 'tel:+14044968178'} 
+              className="text-muted-foreground hover:underline bg-muted"
+            >
               +1 (404) 496-8178
-            </a>
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <MapPinIcon className="h-5 w-5 text-muted-foreground" />

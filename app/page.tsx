@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh">
       <main className="flex-1">
-        <section className="relative w-full h-[60vh] md:h-[80vh] bg-[url('/hero.png')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/40" />
+        <section className="relative w-full h-[60vh] md:h-[80vh] bg-[url('/hero.jpg')] bg-cover bg-center">
+          <div className="absolute inset-0 bg-black/50" />
           <div className="relative h-full flex flex-col items-center justify-center text-center text-primary-foreground px-4 md:px-6">
             <h1 className="text-4xl md:text-6xl font-bold">Kashlan Law</h1>
             <div className="text-lg md:text-2xl mt-4">
@@ -50,12 +50,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex items-center justify-center">
-                <Image src="/kareem1.png" width={400} height={400} alt="About Us" className="rounded-lg" />
+                <Image src="/kareem.png" width={400} height={400} alt="About Us" className="rounded-lg" />
               </div>
             </div>
           </div>
         </section>
-        <section id="practice" className="py-12 md:py-24 bg-gray-400">
+        <section id="practice" className="py-12 md:py-24 bg-gray-300">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center">Our Practice Areas</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">

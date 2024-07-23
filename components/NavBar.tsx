@@ -33,7 +33,7 @@ export default function NavBar() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-background border-b">
+    <header className="w-full bg-white border-b">
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <ScaleIcon className="w-6 h-6 text-primary" />
@@ -64,14 +64,13 @@ export default function NavBar() {
           <Link href="/contact" className="text-muted-foreground hover:text-foreground" prefetch={false}>
             Contact
           </Link>
-          <Link
-            href="#"
+          <Button
+            onClick={() => window.location.href = 'tel:+14044968178'}
             className="inline-flex items-center gap-2 h-9 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            prefetch={false}
           >
             <PhoneIcon className="w-4 h-4" />
             +1 (404) 496-8178
-          </Link>
+          </Button>
         </nav>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
