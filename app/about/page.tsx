@@ -24,7 +24,7 @@ export default function About() {
           <div className="md:w-1/3">
             <Image 
               alt="Kareem A. Kashlan" 
-              src="/kareem3.png"
+              src="/kareem1.png"
               width={500}
               height={500} 
               className="rounded-md" 
