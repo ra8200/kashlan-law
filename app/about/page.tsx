@@ -16,7 +16,7 @@ export default function About() {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold text-white">Kareem A. Kashlan</h1>
-          <Button className="mt-4 bg-black text-white">Get a Free Consultation</Button>
+          <Button className="mt-4 bg-white text-gray-700">Get a Free Consultation</Button>
         </div>
       </div>
       <div className="max-w-5xl mx-auto p-6">
@@ -41,9 +41,6 @@ export default function About() {
               </p>
               <p>
                 Kareem has represented clients from all walks in life in matters ranging from simple Probate petitions to more Complex Business Litigation suits. He has Defended clients from questionable Governmental actions to pursuing hundreds of thousands of dollars on behalf of his clients.
-              </p>
-              <p>
-                As a licensed Attorney in the State of Georgia, Kareem is barred to practice law in all Georgia Trial Courts as well as the GA Court of Appeals. He is also licensed to practice law in Federal Courts including the Federal Court of Appeals.
               </p>
               <p>
                 As a licensed Attorney in the State of Georgia, Kareem is barred to practice law in all Georgia Trial Courts as well as the GA Court of Appeals. He is also licensed to practice law in Federal Courts including the Federal Court of Appeals.

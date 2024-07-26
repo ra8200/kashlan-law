@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { MailIcon, PhoneIcon, LinkedinIcon, MapPinIcon } from "@/components/icons";
 import { Button } from "./ui/button";
 

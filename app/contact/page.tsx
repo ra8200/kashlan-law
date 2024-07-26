@@ -15,19 +15,29 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="flex gap-4">
               <MapPinIcon className="h-6 w-6 text-muted-foreground" />
-              <p className="text-sm font-medium">
+              <a
+                href="https://www.google.com/maps/place/The+Raffaeli+Professional+Building,+1560+Warsaw+Rd,+Roswell,+GA+30076/@34.0373603,-84.3336258,17z/data=!3m1!4b1!4m6!3m5!1s0x88f574c705296c8f:0xea2f30385256a721!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11bw3ym_1n?entry=ttu" 
+                className="text-sm font-medium"
+              >
+                Kashlan Law
+                <br />
                 1560 Warsaw Road
                 <br />
                 Roswell, Georgia 30076
-              </p>
+              </a>
             </div>
             <div className="flex gap-4">
               <PhoneIcon className="h-6 w-6 text-muted-foreground" />
-              <p className="text-sm font-medium">(404) 496-46</p>
+              <a href="+14044968178" className="text-sm font-medium">(404) 496-8179</a>
             </div>
             <div className="flex gap-4">
               <MailOpenIcon className="h-6 w-6 text-muted-foreground" />
-              <p className="text-sm font-medium">k@kash.law</p>
+              <a 
+                href="k@kash.law"
+                className="text-sm font-medium"
+              >
+                k@kash.law
+              </a>
             </div>
           </div>
         </div>
