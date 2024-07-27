@@ -13,6 +13,20 @@ export default function Contact() {
             Have a legal matter you need assistance with? Reach out to our experienced attorneys today.
           </p>
           <div className="space-y-4">
+          <div className="flex gap-4">
+              <MailOpenIcon className="h-6 w-6 text-muted-foreground" />
+              <a 
+                onClick={() => window.location.href = 'mailto:intake@kashlanlaw.com'}
+                className="text-sm font-medium"
+              >
+                intake@kashlanlaw.com
+              </a>
+            </div>
+            <div className="flex gap-4">
+              <PhoneIcon className="h-6 w-6 text-muted-foreground" />
+              <a href="+14044968178" className="text-sm font-medium">
+                (404) 496-8179</a>
+            </div>
             <div className="flex gap-4">
               <MapPinIcon className="h-6 w-6 text-muted-foreground" />
               <a
@@ -24,19 +38,6 @@ export default function Contact() {
                 1560 Warsaw Road
                 <br />
                 Roswell, Georgia 30076
-              </a>
-            </div>
-            <div className="flex gap-4">
-              <PhoneIcon className="h-6 w-6 text-muted-foreground" />
-              <a href="+14044968178" className="text-sm font-medium">(404) 496-8179</a>
-            </div>
-            <div className="flex gap-4">
-              <MailOpenIcon className="h-6 w-6 text-muted-foreground" />
-              <a 
-                href="k@kash.law"
-                className="text-sm font-medium"
-              >
-                k@kash.law
               </a>
             </div>
           </div>

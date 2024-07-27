@@ -10,21 +10,21 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center gap-2">
             <MailIcon className="h-5 w-5 text-muted-foreground" />
-            <Button 
-              onClick={() => window.location.href = 'mailto:k@kash.law'} 
+            <a 
+              onClick={() => window.location.href = 'mailto:intake@kashlanlaw.com'} 
               className="text-muted-foreground hover:underline bg-muted"
             >
-              k@kash.law
-            </Button>
+              intake@kashlanlaw.com
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-            <Button 
+            <a 
               onClick={() => window.location.href = 'tel:+14044968178'} 
               className="text-muted-foreground hover:underline bg-muted"
             >
-              +1 (404) 496-8178
-            </Button>
+            (404) 496-8178
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <MapPinIcon className="h-5 w-5 text-muted-foreground" />

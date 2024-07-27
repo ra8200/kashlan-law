@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       await transporter.sendMail({
           from: email,
-          to: process.env.EMAIL_ACCOUNT,
+          to: "intake@kashlanlaw.com",
           subject: `${practiceArea} , ${name} has submitted an inquiry.`,
           html: `
             <strong>${practiceArea}</strong>
