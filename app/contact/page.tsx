@@ -30,7 +30,7 @@ export default function Contact() {
             <div className="flex gap-4">
               <MapPinIcon className="h-6 w-6 text-muted-foreground" />
               <a
-                href="https://www.google.com/maps/place/The+Raffaeli+Professional+Building,+1560+Warsaw+Rd,+Roswell,+GA+30076/@34.0373603,-84.3336258,17z/data=!3m1!4b1!4m6!3m5!1s0x88f574c705296c8f:0xea2f30385256a721!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11bw3ym_1n?entry=ttu" 
+                href="https://www.google.com/maps/place/Kashlan+Law,+LLC/@34.0373542,-84.3305827,15z/data=!4m6!3m5!1s0x88f575295e837e17:0x88b8b2f612c6279e!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11w2y6rbb4?entry=ttu" 
                 className="text-sm font-medium"
               >
                 Kashlan Law
@@ -40,6 +40,14 @@ export default function Contact() {
                 Roswell, Georgia 30076
               </a>
             </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6612.507934733011!2d-84.33362582571664!3d34.03735587316256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f575295e837e17%3A0x88b8b2f612c6279e!2sKashlan%20Law%2C%20LLC!5e0!3m2!1sen!2sus!4v1723055687285!5m2!1sen!2sus"
+              width="400"
+              height="300"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
         <ContactForm />

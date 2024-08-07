@@ -59,33 +59,39 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center">Our Practice Areas</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-              <Card>
-                <CardContent className="p-6">
-                  <GavelIcon className="h-12 w-12 text-primary" />
-                  <h3 className="text-xl font-bold mt-4">Criminal Law</h3>
-                  <p className="text-muted-foreground mt-2">
-                    Our Criminal Law practice covers a wide range of services including defense against charges such as DUI, drug offenses, and violent crimes. We provide robust defense strategies tailored to the unique circumstances of each client.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <BriefcaseIcon className="h-12 w-12 text-primary" />
-                  <h3 className="text-xl font-bold mt-4">Personal Injury</h3>
-                  <p className="text-muted-foreground mt-2">
-                    Our Personal Injury practice is dedicated to helping clients receive fair compensation for injuries sustained in accidents, including car accidents, slip and falls, and workplace injuries. We fight tirelessly to protect all the rights of our clients.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <ScaleIcon className="h-12 w-12 text-primary" />
-                  <h3 className="text-xl font-bold mt-4">Litigation</h3>
-                  <p className="text-muted-foreground mt-2">
-                    Our litigation team handles complex legal disputes, including business litigation and real estate conflicts. We are committed to achieving favorable outcomes through meticulous preparation and skilled advocacy.
-                  </p>
-                </CardContent>
-              </Card>
+              <Link href="/criminal">
+                <Card>
+                  <CardContent className="p-6">
+                    <GavelIcon className="h-12 w-12 text-primary" />
+                    <h3 className="text-xl font-bold mt-4">Criminal Law</h3>
+                    <p className="text-muted-foreground mt-2">
+                      Our Criminal Law practice covers a wide range of services including defense against charges such as DUI, drug offenses, and violent crimes. We provide robust defense strategies tailored to the unique circumstances of each client.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link href="/personal">
+                <Card>
+                  <CardContent className="p-6">
+                    <BriefcaseIcon className="h-12 w-12 text-primary" />
+                    <h3 className="text-xl font-bold mt-4">Personal Injury</h3>
+                    <p className="text-muted-foreground mt-2">
+                      Our Personal Injury practice is dedicated to helping clients receive fair compensation for injuries sustained in accidents, including car accidents, slip and falls, and workplace injuries. We fight tirelessly to protect all the rights of our clients.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link href="/contact">
+                <Card>
+                  <CardContent className="p-6">
+                    <ScaleIcon className="h-12 w-12 text-primary" />
+                    <h3 className="text-xl font-bold mt-4">Litigation</h3>
+                    <p className="text-muted-foreground mt-2">
+                      Our litigation team handles complex legal disputes, including business litigation and real estate conflicts. We are committed to achieving favorable outcomes through meticulous preparation and skilled advocacy.
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             </div>
           </div>
         </section>

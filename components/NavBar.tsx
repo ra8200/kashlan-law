@@ -12,6 +12,7 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import { ChevronDownIcon, MenuIcon, PhoneIcon, ScaleIcon } from "@/components/icons";
+import Image from "next/image";
 
 export default function NavBar() {
   const pathname = usePathname() || "/";
@@ -36,7 +37,12 @@ export default function NavBar() {
     <header className="w-full bg-white border-b">
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <ScaleIcon className="w-6 h-6 text-primary" />
+          <Image
+            src="/Logo1.png"
+            alt="Kashlan Law" 
+            width={80}
+            height={80} 
+          />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
