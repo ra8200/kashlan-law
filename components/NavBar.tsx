@@ -2,12 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
@@ -27,7 +22,6 @@ export default function NavBar() {
     setIsSheetOpen(false);
   };
 
-  // Close dropdown and sheet on route change
   useEffect(() => {
     handleDropdownClose();
     handleSheetClose();
@@ -39,9 +33,10 @@ export default function NavBar() {
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <Image
             src="/Logo1.png"
-            alt="Kashlan Law" 
-            width={80}
-            height={80} 
+            alt="Kashlan Law Logo" 
+            width={48}
+            height={48} 
+            className="w-12 h-10"
           />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
