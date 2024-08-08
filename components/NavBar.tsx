@@ -32,11 +32,12 @@ export default function NavBar() {
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <Image
-            src="/Logo1.png"
+            src="/logo.png"
             alt="Kashlan Law Logo" 
             width={48}
             height={48} 
             className="w-12 h-10"
+            priority
           />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
