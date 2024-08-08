@@ -10,7 +10,7 @@ import { ChevronDownIcon, MenuIcon, PhoneIcon, ScaleIcon } from "@/components/ic
 import Image from "next/image";
 
 export default function NavBar() {
-  const pathname = usePathname() || "/";
+  const pathname = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
