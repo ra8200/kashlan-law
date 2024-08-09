@@ -15,7 +15,7 @@ interface CardData {
       title: "Murder",
       description:
         "Facing murder charges can be one of the most daunting experiences. Kashlan Law offers robust defense strategies for clients accused of murder in Georgia. We work tirelessly to ensure your rights are protected throughout the legal process.",
-      image: "/criminal/juvenile.png",
+      image: "/criminal/murder.png",
     },
     {
       title: "Battery",
