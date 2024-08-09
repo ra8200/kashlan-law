@@ -34,9 +34,9 @@ export default function NavBar() {
           <Image
             src="/Logo.png"
             alt="Kashlan Law Logo" 
-            width={48}
-            height={48} 
-            className="w-12 h-10"
+            width={192}
+            height={160} 
+            className="w-12 h-10 object-contain"
             priority
           />
           <span className="text-lg font-bold">Kashlan Law</span>
