@@ -19,10 +19,10 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold">Kashlan Law</h1>
             <div className="text-lg md:text-2xl mt-4">
               <p>
-                Your legal champions in Georgia, specializing in Criminal Law and Personal Injury.
+                Dedicated legal advocates serving Georgia. Our expertise in Criminal Law and Personal Injury is matched only by our commitment to your case.
               </p>
-              <p> 
-                Expertise meets compassion here, where your fight becomes ours.
+              <p className="mt-2"> 
+                At Kashlan Law, we do not just represent you, we stand with you.
               </p>
             </div>
             <Link
