@@ -33,7 +33,7 @@ export default function NavBar() {
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <Image
             src="/Logo.png"
-            alt="Kashlan Law Logo" 
+            alt="Logo" 
             width={192}
             height={160} 
             className="w-12 h-10 object-contain"
