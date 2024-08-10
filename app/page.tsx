@@ -36,7 +36,32 @@ export default function Home() {
         </section>
         <section id="about" className="py-12 md:py-24 bg-background">
           <div className="container px-4 md:px-6">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <h2 className="text-3xl font-bold">About Us</h2>
+                <p className="mt-4 text-muted-foreground text-justify">
+                  Kashlan Law serving Georgia, including the bustling city of Atlanta and its expansive metro area, we offer comprehensive legal representation in both Criminal Law and Personal Injury.
+                </p>
+                <p className="mt-4 text-muted-foreground text-justify">
+                  Our experienced attorneys are deeply familiar with the unique legal landscape of the region, from the urban complexities of Atlanta to the varied jurisdictions of the Northern District.
+                </p>
+                <p className="mt-4 text-muted-foreground text-justify">
+                  Whether facing criminal charges or seeking just compensation for personal injuries, our clients benefit from our dedicated pursuit of justice and our commitment to achieving the best possible outcomes. Our firm stands as a beacon of legal expertise and client-focused service, navigating the intricacies of the law with skill and integrity.
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <Image src="/kareem.png" width={400} height={400} alt="About Us" className="rounded-lg" />
+                <div className="flex justify-center items-center gap-8 mt-4">
+                  <Image src="/GACDL.png" width={64} height={64} alt="GACDL" />
+                  <Image src="/GTLA.png" width={188} height={64} alt="GTLA" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <section id="about" className="py-12 md:py-24 bg-background">
+          <div className="container px-4 md:px-6">
+            <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <h2 className="text-3xl font-bold">About Us</h2>
                 <p className="mt-4 text-muted-foreground text-justify">
@@ -51,7 +76,7 @@ export default function Home() {
               </div>
               <div className="flex-col items-center justify-center">
                 <Image src="/kareem.png" width={400} height={400} alt="About Us" className="rounded-lg" />
-                <div className="flex justify-center gap-8 mt-4">
+                <div className="flex justify-center gap-8 mt-4 p-5">
                   <div>
                     <Image src="/GACDL.png" width={64} height={64} alt="GACDL" />
                   </div>
@@ -62,7 +87,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section id="practice" className="py-12 md:py-24 bg-secondary/70">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center text-white">Our Practice Areas</h2>

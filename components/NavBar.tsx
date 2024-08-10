@@ -13,6 +13,7 @@ export default function NavBar() {
   const pathname = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [showPracticeAreas, setShowPracticeAreas] = useState(false);
 
   const handleDropdownClose = () => {
     setIsDropdownOpen(false);
@@ -82,6 +83,46 @@ export default function NavBar() {
           </SheetTrigger>
           <SheetContent side="right" className="md:hidden">
             <div className="grid gap-4 p-4">
+              <Link href="/" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+                Home
+              </Link>
+              <Link href="/about" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+                About Us
+              </Link>
+              <button 
+                className="flex items-center gap-1 hover:text-foreground text-left"
+                onClick={() => setShowPracticeAreas(!showPracticeAreas)}
+              >
+                Practice Areas
+                <ChevronDownIcon className={`w-4 h-4 transition-transform ${showPracticeAreas ? 'rotate-180' : ''}`} />
+              </button>
+              {showPracticeAreas && (
+                <div className="pl-4 grid gap-2">
+                  <Link href="/criminal" prefetch={false} onClick={handleSheetClose}>
+                    Criminal Law
+                  </Link>
+                  <Link href="/personal" prefetch={false} onClick={handleSheetClose}>
+                    Personal Injury
+                  </Link>
+                </div>
+              )}
+              <Link href="/contact" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+                Contact
+              </Link>
+            </div>
+            <div className="mt-auto">
+              <Link
+                href="tel:+14044968178"
+                className="inline-flex w-full items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                prefetch={false}
+              >
+                <PhoneIcon className="w-4 h-4" />
+                (404)496-8179
+              </Link>
+            </div>
+          </SheetContent>
+          {/* <SheetContent side="right" className="md:hidden">
+            <div className="grid gap-4 p-4">
             <Link href="/" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
                 Home
               </Link>
@@ -120,7 +161,7 @@ export default function NavBar() {
                 (404)496-8179
               </Link>
             </div>
-          </SheetContent>
+          </SheetContent> */}
         </Sheet>
       </div>
     </header>
