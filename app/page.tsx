@@ -14,7 +14,7 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh">
       <main className="flex-1">
         <section className="relative w-full h-[60vh] md:h-[80vh] bg-[url('/hero.jpg')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-secondary/70" />
           <div className="relative h-full flex flex-col items-center justify-center text-center text-primary-foreground px-4 md:px-6">
             <h1 className="text-4xl md:text-6xl font-bold">Kashlan Law</h1>
             <div className="text-lg md:text-2xl mt-4">
@@ -55,9 +55,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="practice" className="py-12 md:py-24 bg-gray-300">
+        <section id="practice" className="py-12 md:py-24 bg-secondary/70">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold text-center">Our Practice Areas</h2>
+            <h2 className="text-3xl font-bold text-center text-white">Our Practice Areas</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
               <Link href="/criminal">
                 <Card>

@@ -28,25 +28,24 @@ export default function NavBar() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-white border-b">
+    <header className="w-full bg-secondary/20 border-b">
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <Image
-            src="/Logo.png"
-            alt="Logo" 
-            width={192}
-            height={160} 
-            className="w-12 h-10 object-contain"
-            priority
+            src="/klLogo.png"
+            height={40}
+            width={40}
+            alt="Kabob Law Logo" 
+            className="w-10 h-8 rounded"
           />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/about" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="/about" className="hover:text-foreground" prefetch={false}>
             About Us
           </Link>
           <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
-            <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground hover:text-foreground">
+            <DropdownMenuTrigger className="flex items-center gap-1 hover:text-foreground">
               Practice Areas
               <ChevronDownIcon className="w-4 h-4" />
             </DropdownMenuTrigger>
@@ -63,12 +62,12 @@ export default function NavBar() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="/contact" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+          <Link href="/contact" className="hover:text-foreground" prefetch={false}>
             Contact
           </Link>
           <Button
             onClick={() => window.location.href = 'tel:+14044968178'}
-            className="inline-flex items-center gap-2 h-9 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           >
             <PhoneIcon className="w-4 h-4" />
             +1 (404) 496-8178
@@ -76,21 +75,21 @@ export default function NavBar() {
         </nav>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <MenuIcon className="w-6 h-6" />
+            <Button variant="outline" size="icon" className="md:hidden bg-secondary">
+              <MenuIcon className="w-6 h-6 text-white" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="md:hidden">
             <div className="grid gap-4 p-4">
-            <Link href="/" className="text-muted-foreground hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+            <Link href="/" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
                 Home
               </Link>
-              <Link href="/about" className="text-muted-foreground hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+              <Link href="/about" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
                 About Us
               </Link>
               <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-muted-foreground hover:text-foreground">
+                <DropdownMenuTrigger className="flex items-center gap-1 hover:text-foreground">
                   Practice Areas
                   <ChevronDownIcon className="w-4 h-4" />
                 </DropdownMenuTrigger>
@@ -107,14 +106,14 @@ export default function NavBar() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Link href="/contact" className="text-muted-foreground hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+              <Link href="/contact" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
                 Contact
               </Link>
             </div>
             <div className="mt-auto">
               <Link
                 href="tel:+14044968178"
-                className="inline-flex w-full items-center gap-2 h-9 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex w-full items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="w-4 h-4" />

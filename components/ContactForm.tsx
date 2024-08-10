@@ -39,7 +39,7 @@ export default function ContactForm () {
   };
 
   return (
-    <Card>
+    <Card className="bg-secondary/20">
       <CardHeader>
         <CardTitle>Contact Us</CardTitle>
         <CardDescription>Fill out the form below and we will get back to you as soon as possible.</CardDescription>
@@ -76,7 +76,7 @@ export default function ContactForm () {
             <Label htmlFor="description">Description</Label>
             <Textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Describe your legal matter" className="min-h-[100px]" />
           </div>
-          <Button type="submit">Submit</Button>
+          <Button type="submit" className="bg-secondary">Submit</Button>
         </form>
       </CardContent>
     </Card>

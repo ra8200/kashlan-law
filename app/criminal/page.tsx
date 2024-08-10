@@ -37,7 +37,7 @@ export default function CriminalLaw() {
   return (
     <div className="flex flex-col min-h-dvh">
       <header className="relative w-full bg-[url('/hero2.png')] bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-secondary/70" />
         <div className="container py-20 px-4 md:px-6 relative z-10 text-center text-white">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Criminal Law</h1>
           <p className="mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -59,7 +59,7 @@ export default function CriminalLaw() {
                 At Kashlan Law, we believe in the fundamental principle that every individual, is innocent until proven guilty. Our mission is to defend your rights and ensure you receive a fair and just legal process. Specializing in a wide range of criminal defense cases, from violent crimes to financial fraud, our team is equipped with the knowledge and experience to navigate the complexities of the criminal justice system. We are committed to providing personalized and aggressive defense strategies to achieve the best possible outcome for our clients.
               </p>
             </div>
-            <div className="mt-8 md:mt-0 md:w-1/2">
+            <div className="mt-8 md:mt-0 md:w-1/2 bg-secondary/40">
               <Image 
                 src="/criminalLaw.png" 
                 alt="Team" 
@@ -70,15 +70,14 @@ export default function CriminalLaw() {
             </div>
           </div>
         </section>
-        <section className="py-12 md:py-20">
-          <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <h2 className="mt-8 text-2xl font-bold">Areas of Practice</h2>
+        <section className="py-6 md:py-24 bg-secondary/70">
+          <h2 className="text-3xl font-bold text-center text-white">Areas of Practice</h2>
+          <div className="py-12 container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {criminalCardData.map((card, index) => (
               <Card
                 key={index}
                 title={card.title}
                 description={card.description}
-                image={card.image}
                 onClick={() => handleCardClick(index)}
               />
             ))}

@@ -14,7 +14,7 @@ export default function About() {
         className="relative w-full h-[300px] bg-cover bg-center"
         style={{ backgroundImage: "url('/hero2.png')" }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 bg-secondary/70 bg-opacity-50 flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold text-white">Kareem A. Kashlan</h1>
           <Button className="mt-4 bg-white text-gray-700">Get a Free Consultation</Button>
         </div>

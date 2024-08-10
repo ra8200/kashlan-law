@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import {  ArrowRightIcon } from '@/components/icons';
+import { ArrowRightIcon } from '@/components/icons';
 
 
 interface PopupCardProps {
@@ -16,16 +15,16 @@ const PopupCard: React.FC<PopupCardProps> = ({ isOpen, title, description, image
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondary/20">
       <div className="relative bg-white rounded-lg popup-content max-w-2xl">
         <div className="group relative rounded-lg overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{ backgroundImage: `url(${image})` }}
           />
-          <div className="absolute inset-0 bg-black/70 group-hover:bg-black/50 transition-colors duration-300 ease-in-out" />
+          <div className="absolute inset-0 bg-secondary/70 group-hover:bg-secondary/50 transition-colors duration-300 ease-in-out" />
           <Image 
-            src="/placeholder.svg"
+            src="/hero2.png"
             alt={title} 
             width={800}
             height={400} 
