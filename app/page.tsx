@@ -49,8 +49,16 @@ export default function Home() {
                   Whether facing criminal charges or seeking just compensation for personal injuries, our clients benefit from our dedicated pursuit of justice and our commitment to achieving the best possible outcomes. Our firm stands as a beacon of legal expertise and client-focused service, navigating the intricacies of the law with skill and integrity.
                 </p>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex-col items-center justify-center">
                 <Image src="/kareem.png" width={400} height={400} alt="About Us" className="rounded-lg" />
+                <div className="flex justify-center gap-8 mt-4">
+                  <div>
+                    <Image src="/GACDL.png" width={64} height={64} alt="GACDL" />
+                  </div>
+                  <div className="mt-4">
+                    <Image src="/GTLA.png" width={188} height={64} alt="GTLA" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

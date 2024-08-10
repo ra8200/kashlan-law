@@ -41,8 +41,8 @@ export default function ContactForm () {
   return (
     <Card className="bg-secondary/20">
       <CardHeader>
-        <CardTitle>Contact Us</CardTitle>
-        <CardDescription>Fill out the form below and we will get back to you as soon as possible.</CardDescription>
+        <CardTitle className="text-black">Contact Us</CardTitle>
+        <CardDescription className="text-black">Fill out the form below and we will get back to you as soon as possible.</CardDescription>
       </CardHeader>
       <CardContent>
         <form className="space-y-4" onSubmit={handleSubmit}>
