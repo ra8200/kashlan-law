@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "/styles/globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 import { cn } from "@/lib/utils"
  
@@ -17,12 +18,26 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+children,
 }: Readonly<{
-  children: React.ReactNode;
+children: React.ReactNode;
 }>) {
-  return (
+return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-PKCK49ZZVH"></Script>
+        <Script
+          id="google-analytics" 
+          dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PKCK49ZZVH');
+          `,
+        }} />
+      </head>
       <body className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable

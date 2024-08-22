@@ -37,7 +37,7 @@ export default function NavBar() {
             height={40}
             width={40}
             alt="Kabob Law Logo" 
-            className="w-10 h-8 rounded"
+            className="w-12 h-10 rounded"
           />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
@@ -121,47 +121,6 @@ export default function NavBar() {
               </Link>
             </div>
           </SheetContent>
-          {/* <SheetContent side="right" className="md:hidden">
-            <div className="grid gap-4 p-4">
-            <Link href="/" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
-                Home
-              </Link>
-              <Link href="/about" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
-                About Us
-              </Link>
-              <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
-                <DropdownMenuTrigger className="flex items-center gap-1 hover:text-foreground">
-                  Practice Areas
-                  <ChevronDownIcon className="w-4 h-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start">
-                  <DropdownMenuItem onSelect={handleDropdownClose}>
-                    <Link href="/criminal" prefetch={false} onClick={handleSheetClose}>
-                      Criminal Law
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem onSelect={handleDropdownClose}>
-                    <Link href="/personal" prefetch={false} onClick={handleSheetClose}>
-                      Personal Injury
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-              <Link href="/contact" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
-                Contact
-              </Link>
-            </div>
-            <div className="mt-auto">
-              <Link
-                href="tel:+14044968178"
-                className="inline-flex w-full items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                prefetch={false}
-              >
-                <PhoneIcon className="w-4 h-4" />
-                (404)496-8179
-              </Link>
-            </div>
-          </SheetContent> */}
         </Sheet>
       </div>
     </header>

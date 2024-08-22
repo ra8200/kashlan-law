@@ -41,7 +41,7 @@ export default function ContactForm () {
   return (
     <Card className="bg-secondary/20">
       <CardHeader>
-        <CardTitle className="text-black">Contact Us</CardTitle>
+        <CardTitle className="text-black">How can we help you?</CardTitle>
         <CardDescription className="text-black">Fill out the form below and we will get back to you as soon as possible.</CardDescription>
       </CardHeader>
       <CardContent>
@@ -69,6 +69,7 @@ export default function ContactForm () {
               <SelectContent>
                 <SelectItem value="criminal-law">Criminal Law</SelectItem>
                 <SelectItem value="personal-injury">Personal Injury</SelectItem>
+                <SelectItem value="litigation">Litigation</SelectItem>
               </SelectContent>
             </Select>
           </div>
