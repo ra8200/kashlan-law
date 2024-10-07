@@ -5,6 +5,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'POST') {
     const { name, email, phone, practiceArea, description } = req.body;
 
+    // Validate required fields
+    if (!description || description.trim().length === 0) {
+      return res.status(400).json({ message: 'Description is required.' });
+    }
+    if (!name || name.trim().length === 0) {
+      return res.status(400).json({ message: 'Name is required.' });
+    }
+    if (!email || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+      return res.status(400).json({ message: 'A valid email is required.' });
+    }
+    if (!phone || phone.trim().length < 10) {
+      return res.status(400).json({ message: 'A valid phone number is required.' });
+    }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -14,6 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     try {
+      // Send the email to the firm
       await transporter.sendMail({
           from: email,
           to: "intake@kashlanlaw.com",
@@ -32,6 +47,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           replyTo: email,
         });
 
+        // Send confirmation email to the user
         await transporter.sendMail({
           from: process.env.EMAIL_ACCOUNT,
           to: email,

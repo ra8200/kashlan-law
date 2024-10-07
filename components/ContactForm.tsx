@@ -18,6 +18,19 @@ export default function ContactForm () {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (!description.trim()) {
+      alert('Please provide a description of your legal matter.');
+      return;
+    }
+    if (!email.trim() || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+      alert('Please provide a valid email address.');
+      return;
+    }
+    if (!description.trim()) {
+      alert('Please provide a description of your legal matter.');
+      return;
+    }
+
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: {
@@ -52,13 +65,13 @@ export default function ContactForm () {
               <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter your name" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" />
-            </div>
-          </div>
-          <div className="space-y-2">
             <Label htmlFor="phone">Phone Number</Label>
             <Input id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter your phone number" />
+          </div>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" />
           </div>
           <div className="space-y-2">
             <Label htmlFor="practice-area">Practice Area</Label>
