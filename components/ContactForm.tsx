@@ -65,9 +65,9 @@ export default function ContactForm () {
               <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter your name" />
             </div>
             <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number</Label>
-            <Input id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter your phone number" />
-          </div>
+              <Label htmlFor="phone">Phone Number</Label>
+              <Input id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter your phone number" />
+            </div>
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
@@ -90,6 +90,9 @@ export default function ContactForm () {
             <Label htmlFor="description">Description</Label>
             <Textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Describe your legal matter" className="min-h-[100px]" />
           </div>
+          <div className="mt-2 justify justify-center">
+          <p className="text-xs text-gray-600">By providing your phone number, you consent to receive SMS messages from Kashlan Law LLC. Message and data rates may apply. Message frequency varies. Reply STOP to opt-out.</p>
+        </div>
           <Button type="submit" className="bg-secondary">Submit</Button>
         </form>
       </CardContent>

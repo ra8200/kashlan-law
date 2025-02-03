@@ -1,7 +1,7 @@
 "use client";
 
+import Link from "next/link";
 import { MailIcon, PhoneIcon, LinkedinIcon, MapPinIcon } from "@/components/icons";
-import { Button } from "./ui/button";
 
 export default function Footer() {
   return (
@@ -39,6 +39,9 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-end gap-4">
           <p className="text-base">&copy; 2024 Kashlan Law. All rights reserved.</p>
+          <p className="text-xs text-gray-600">
+            By using this site, you agree to our <a href="/privacy-policy" className="hover:underline">Privacy Policy</a> , <a href="/terms-of-service" className="hover:underline">Terms of Service</a>, and <a href="/disclaimer" className="hover:underline">Disclaimer</a>.
+          </p>
         </div>
       </div>
     </footer>
