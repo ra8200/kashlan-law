@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
             <div className="container mx-auto py-16">
               <h4 className="text-md font-semibold">Effective Date: January, 1st, 2025</h4>
               <p className="mt-4 text-md">
-                Kashlan Law LLC (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [https://www.kashlanlaw.com] (the &quot;Site&quot;), contact us, or provide your information. 
+                Kashlan Law LLC (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://www.kashlanlaw.com (the &quot;Site&quot;), contact us, or provide your information. 
               </p>
               <h3 className="mt-8 text-xl font-bold">1. Information We Collect</h3>
               <p className="mt-4 text-md">
@@ -39,13 +39,13 @@ const PrivacyPolicy = () => {
               </p>
               <h3 className="mt-8 text-xl font-bold">3. SMS & Communication Consent</h3>
               <p className="mt-4 text-md">
-                - By providing your phone number, you consent to receive SMS messages from Kashlan Law LLC regarding legal inquiries, updates, and other relevant information. Message frequency varies. Message and data rates may apply. 
+                By providing your phone number or texting us first, you consent to receive SMS messages from Kashlan Law LLC regarding legal inquiries, updates, and other relevant information. To initiate contact, send a text to (470) 945-1965. Message frequency varies. Message and data rates may apply. Reply STOP to opt-out, or HELP for assistance. 
                 <br />
-                - Reply **STOP** to opt-out, or **HELP** for assistance.
+                Reply **STOP** to opt-out, or **HELP** for assistance.
               </p>
               <h3 className="mt-8 text-xl font-bold">4. How We Protect Your Data</h3>
               <p className="mt-4 text-md">
-                  - We implement security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.
+                  We implement security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.
               </p>
               <h3 className="mt-8 text-xl font-bold">5. Sharing Your Information</h3>
               <p className="mt-4 text-md">
@@ -59,9 +59,9 @@ const PrivacyPolicy = () => {
               </p>
               <h3 className="mt-8 text-xl font-bold">6. Your Rights & Choices</h3>
               <p className="mt-4 text-md">
-                - Opt-Out: You can opt out of receiving communications at any time.
+                Opt-Out: You can opt out of receiving communications at any time.
                 <br />
-                - Access & Update: You may request access, updates, or deletion of your personal data by contacting us.
+                Access & Update: You may request access, updates, or deletion of your personal data by contacting us.
               </p>
               <h3 className="mt-8 text-xl font-bold">7. Changes to This Policy</h3>
               <p className="mt-4 text-md">

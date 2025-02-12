@@ -20,10 +20,10 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <PhoneIcon className="h-5 w-5" />
             <a 
-              onClick={() => window.location.href = 'tel:+14044968178'} 
+              onClick={() => window.location.href = 'tel:+14709451965'} 
               className="hover:underline"
             >
-            (404) 496-8178
+              (470) 945-1965
             </a>
           </div>
           <div className="flex items-center gap-2">
@@ -39,8 +39,11 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-end gap-4">
           <p className="text-base">&copy; 2024 Kashlan Law. All rights reserved.</p>
-          <p className="text-xs text-gray-600">
-            By using this site, you agree to our <a href="/privacy-policy" className="hover:underline">Privacy Policy</a> , <a href="/terms-of-service" className="hover:underline">Terms of Service</a>, and <a href="/disclaimer" className="hover:underline">Disclaimer</a>.
+          <p className="text-base justify justify-centergap-2 top-2 mt-2">
+             By Texting Kashlan Law LLC - you consent to communications via text messaging.
+          </p>
+          <p className="text-base justify justify-centergap-2 top-2 mt-2">
+            By using this site, you agree to our <a href="/privacy-policy" className="underline">Privacy Policy</a> , <a href="/terms-of-service" className="text-bold underline">Terms of Service</a>, and <a href="/disclaimer" className="underline">Disclaimer</a>.
           </p>
         </div>
       </div>

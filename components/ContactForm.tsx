@@ -91,7 +91,7 @@ export default function ContactForm () {
             <Textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Describe your legal matter" className="min-h-[100px]" />
           </div>
           <div className="mt-2 justify justify-center">
-          <p className="text-xs text-gray-600">By providing your phone number, you consent to receive SMS messages from Kashlan Law LLC. Message and data rates may apply. Message frequency varies. Reply STOP to opt-out.</p>
+          <p className="text-xs text-gray-600">By providing your phone number or texting us first, you consent to receive SMS messages from Kashlan Law LLC. To initiate contact, text (470) 945-1965. Message & data rates may apply. Reply STOP to opt-out. HELP for help.</p>
         </div>
           <Button type="submit" className="bg-secondary">Submit</Button>
         </form>

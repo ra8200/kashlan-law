@@ -67,11 +67,11 @@ export default function NavBar() {
             Contact
           </Link>
           <Button
-            onClick={() => window.location.href = 'tel:+14044968178'}
+            onClick={() => window.location.href = 'tel:+14709451965'}
             className="inline-flex items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           >
             <PhoneIcon className="w-4 h-4" />
-            +1 (404) 496-8178
+            +1 (470) 945-1965
           </Button>
         </nav>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
@@ -112,12 +112,12 @@ export default function NavBar() {
             </div>
             <div className="mt-auto">
               <Link
-                href="tel:+14044968178"
+                href="tel:+14709451965"
                 className="inline-flex w-full items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 <PhoneIcon className="w-4 h-4" />
-                (404)496-8179
+                (470)945-1965
               </Link>
             </div>
           </SheetContent>

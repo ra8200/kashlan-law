@@ -24,8 +24,8 @@ export default function Contact() {
             </div>
             <div className="flex gap-4">
               <PhoneIcon className="h-6 w-6 text-muted-foreground" />
-              <a href="+14044968178" className="text-sm font-medium">
-                (404) 496-8179</a>
+              <a href="+14709451965" className="text-sm font-medium">
+                (470) 945-1965</a>
             </div>
             <div className="flex gap-4">
               <MapPinIcon className="h-6 w-6 text-muted-foreground" />
