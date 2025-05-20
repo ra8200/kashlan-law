@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 
 interface IconProps {
-    className?: string;
+  className?: string;
 }
 
 export function XIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -60,7 +60,7 @@ export function BriefcaseIcon(props: IconProps) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      >
+    >
       <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
       <rect width="20" height="14" x="2" y="6" rx="2" />
     </svg>
@@ -69,7 +69,7 @@ export function BriefcaseIcon(props: IconProps) {
 
 export function ScaleIcon(props: IconProps) {
   return (
-  <svg
+    <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -80,7 +80,7 @@ export function ScaleIcon(props: IconProps) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      >
+    >
       <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
       <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
       <path d="M7 21h10" />
@@ -106,7 +106,7 @@ export function ChevronDownIcon(props: IconProps) {
     >
       <path d="m6 9 6 6 6-6" />
     </svg>
-  )
+  );
 }
 
 export function MenuIcon(props: IconProps) {
@@ -127,7 +127,7 @@ export function MenuIcon(props: IconProps) {
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }
 
 export function PhoneIcon(props: IconProps) {
@@ -146,7 +146,7 @@ export function PhoneIcon(props: IconProps) {
     >
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
     </svg>
-  )
+  );
 }
 
 export function LinkedinIcon(props: IconProps) {
@@ -169,7 +169,7 @@ export function LinkedinIcon(props: IconProps) {
     </svg>
   );
 }
-  
+
 export function MailIcon(props: IconProps) {
   return (
     <svg
@@ -207,7 +207,7 @@ export function ArrowRightIcon(props: React.SVGProps<SVGSVGElement>) {
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />
     </svg>
-  )
+  );
 }
 
 export function MailOpenIcon(props: IconProps) {

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Card,  CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { GavelIcon, BriefcaseIcon, ScaleIcon } from "@/components/icons";
 import ContactForm from "@/components/ContactForm";
 
@@ -19,9 +19,11 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold">Kashlan Law</h1>
             <div className="text-lg md:text-2xl mt-4">
               <p>
-                Dedicated legal advocates serving Georgia. Our expertise in Criminal Law and Personal Injury is matched only by our commitment to your case.
+                Dedicated legal advocates serving Georgia. Our expertise in
+                Criminal Law and Personal Injury is matched only by our
+                commitment to your case.
               </p>
-              <p className="mt-2"> 
+              <p className="mt-2">
                 At Kashlan Law, we do not just represent you, we stand with you.
               </p>
             </div>
@@ -40,17 +42,32 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl font-bold">About Us</h2>
                 <p className="mt-4 text-muted-foreground text-justify">
-                  Kashlan Law serving Georgia, including the bustling city of Atlanta and its expansive metro area, we offer comprehensive legal representation in both Criminal Law and Personal Injury.
+                  Kashlan Law serving Georgia, including the bustling city of
+                  Atlanta and its expansive metro area, we offer comprehensive
+                  legal representation in both Criminal Law and Personal Injury.
                 </p>
                 <p className="mt-4 text-muted-foreground text-justify">
-                  Our experienced attorneys are deeply familiar with the unique legal landscape of the region, from the urban complexities of Atlanta to the varied jurisdictions of the Northern District.
+                  Our experienced attorneys are deeply familiar with the unique
+                  legal landscape of the region, from the urban complexities of
+                  Atlanta to the varied jurisdictions of the Northern District.
                 </p>
                 <p className="mt-4 text-muted-foreground text-justify">
-                  Whether facing criminal charges or seeking just compensation for personal injuries, our clients benefit from our dedicated pursuit of justice and our commitment to achieving the best possible outcomes. Our firm stands as a beacon of legal expertise and client-focused service, navigating the intricacies of the law with skill and integrity.
+                  Whether facing criminal charges or seeking just compensation
+                  for personal injuries, our clients benefit from our dedicated
+                  pursuit of justice and our commitment to achieving the best
+                  possible outcomes. Our firm stands as a beacon of legal
+                  expertise and client-focused service, navigating the
+                  intricacies of the law with skill and integrity.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <Image src="/kareem.png" width={400} height={400} alt="About Us" className="rounded-lg" />
+                <Image
+                  src="/kareem.png"
+                  width={400}
+                  height={400}
+                  alt="About Us"
+                  className="rounded-lg"
+                />
                 <div className="flex justify-center items-center gap-8 mt-4">
                   <Image src="/GACDL.png" width={64} height={64} alt="GACDL" />
                   <Image src="/GTLA.png" width={188} height={64} alt="GTLA" />
@@ -90,7 +107,9 @@ export default function Home() {
         </section> */}
         <section id="practice" className="py-12 md:py-24 bg-secondary/70">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold text-center text-white">Our Practice Areas</h2>
+            <h2 className="text-3xl font-bold text-center text-white">
+              Our Practice Areas
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
               <Link href="/criminal">
                 <Card>
@@ -98,7 +117,11 @@ export default function Home() {
                     <GavelIcon className="h-12 w-12 text-primary" />
                     <h3 className="text-xl font-bold mt-4">Criminal Law</h3>
                     <p className="text-muted-foreground mt-2">
-                      Our Criminal Law practice covers a wide range of services including defense against charges such as DUI, drug offenses, and violent crimes. We provide robust defense strategies tailored to the unique circumstances of each client.
+                      Our Criminal Law practice covers a wide range of services
+                      including defense against charges such as DUI, drug
+                      offenses, and violent crimes. We provide robust defense
+                      strategies tailored to the unique circumstances of each
+                      client.
                     </p>
                   </CardContent>
                 </Card>
@@ -109,7 +132,11 @@ export default function Home() {
                     <BriefcaseIcon className="h-12 w-12 text-primary" />
                     <h3 className="text-xl font-bold mt-4">Personal Injury</h3>
                     <p className="text-muted-foreground mt-2">
-                      Our Personal Injury practice is dedicated to helping clients receive fair compensation for injuries sustained in accidents, including car accidents, slip and falls, and workplace injuries. We fight tirelessly to protect all the rights of our clients.
+                      Our Personal Injury practice is dedicated to helping
+                      clients receive fair compensation for injuries sustained
+                      in accidents, including car accidents, slip and falls, and
+                      workplace injuries. We fight tirelessly to protect all the
+                      rights of our clients.
                     </p>
                   </CardContent>
                 </Card>
@@ -120,7 +147,10 @@ export default function Home() {
                     <ScaleIcon className="h-12 w-12 text-primary" />
                     <h3 className="text-xl font-bold mt-4">Litigation</h3>
                     <p className="text-muted-foreground mt-2">
-                      Our litigation team handles complex legal disputes, including business litigation and real estate conflicts. We are committed to achieving favorable outcomes through meticulous preparation and skilled advocacy.
+                      Our litigation team handles complex legal disputes,
+                      including business litigation and real estate conflicts.
+                      We are committed to achieving favorable outcomes through
+                      meticulous preparation and skilled advocacy.
                     </p>
                   </CardContent>
                 </Card>

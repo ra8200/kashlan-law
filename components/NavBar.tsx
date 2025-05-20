@@ -2,11 +2,21 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
-import { ChevronDownIcon, MenuIcon, PhoneIcon, ScaleIcon } from "@/components/icons";
+import {
+  ChevronDownIcon,
+  MenuIcon,
+  PhoneIcon,
+  ScaleIcon,
+} from "@/components/icons";
 import Image from "next/image";
 
 export default function NavBar() {
@@ -36,13 +46,17 @@ export default function NavBar() {
             src="/klLogo.png"
             height={40}
             width={40}
-            alt="Kabob Law Logo" 
+            alt="Kabob Law Logo"
             className="w-12 h-10 rounded"
           />
           <span className="text-lg font-bold">Kashlan Law</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/about" className="hover:text-foreground" prefetch={false}>
+          <Link
+            href="/about"
+            className="hover:text-foreground"
+            prefetch={false}
+          >
             About Us
           </Link>
           <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
@@ -63,11 +77,15 @@ export default function NavBar() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="/contact" className="hover:text-foreground" prefetch={false}>
+          <Link
+            href="/contact"
+            className="hover:text-foreground"
+            prefetch={false}
+          >
             Contact
           </Link>
           <Button
-            onClick={() => window.location.href = 'tel:+14709451965'}
+            onClick={() => (window.location.href = "tel:+14709451965")}
             className="inline-flex items-center gap-2 h-9 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           >
             <PhoneIcon className="w-4 h-4" />
@@ -76,37 +94,68 @@ export default function NavBar() {
         </nav>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden bg-secondary">
+            <Button
+              variant="outline"
+              size="icon"
+              className="md:hidden bg-secondary"
+            >
               <MenuIcon className="w-6 h-6 text-white" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="md:hidden">
             <div className="grid gap-4 p-4">
-              <Link href="/" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+              <Link
+                href="/"
+                className="hover:text-foreground"
+                prefetch={false}
+                onClick={handleSheetClose}
+              >
                 Home
               </Link>
-              <Link href="/about" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+              <Link
+                href="/about"
+                className="hover:text-foreground"
+                prefetch={false}
+                onClick={handleSheetClose}
+              >
                 About Us
               </Link>
-              <button 
+              <button
                 className="flex items-center gap-1 hover:text-foreground text-left"
                 onClick={() => setShowPracticeAreas(!showPracticeAreas)}
               >
                 Practice Areas
-                <ChevronDownIcon className={`w-4 h-4 transition-transform ${showPracticeAreas ? 'rotate-180' : ''}`} />
+                <ChevronDownIcon
+                  className={`w-4 h-4 transition-transform ${
+                    showPracticeAreas ? "rotate-180" : ""
+                  }`}
+                />
               </button>
               {showPracticeAreas && (
                 <div className="pl-4 grid gap-2">
-                  <Link href="/criminal" prefetch={false} onClick={handleSheetClose}>
+                  <Link
+                    href="/criminal"
+                    prefetch={false}
+                    onClick={handleSheetClose}
+                  >
                     Criminal Law
                   </Link>
-                  <Link href="/personal" prefetch={false} onClick={handleSheetClose}>
+                  <Link
+                    href="/personal"
+                    prefetch={false}
+                    onClick={handleSheetClose}
+                  >
                     Personal Injury
                   </Link>
                 </div>
               )}
-              <Link href="/contact" className="hover:text-foreground" prefetch={false} onClick={handleSheetClose}>
+              <Link
+                href="/contact"
+                className="hover:text-foreground"
+                prefetch={false}
+                onClick={handleSheetClose}
+              >
                 Contact
               </Link>
             </div>

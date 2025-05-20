@@ -8,15 +8,20 @@ export default function Contact() {
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container grid max-w-6xl grid-cols-1 gap-8 px-4 md:px-6 lg:grid-cols-2">
         <div className="space-y-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Get in Touch
+          </h2>
           <p className="text-muted-foreground md:text-xl">
-            Have a legal matter you need assistance with? Reach out to our experienced attorneys today.
+            Have a legal matter you need assistance with? Reach out to our
+            experienced attorneys today.
           </p>
           <div className="space-y-4">
-          <div className="flex gap-4">
+            <div className="flex gap-4">
               <MailOpenIcon className="h-6 w-6 text-muted-foreground" />
-              <a 
-                onClick={() => window.location.href = 'mailto:intake@kashlanlaw.com'}
+              <a
+                onClick={() =>
+                  (window.location.href = "mailto:intake@kashlanlaw.com")
+                }
                 className="text-sm font-medium"
               >
                 intake@kashlanlaw.com
@@ -25,12 +30,13 @@ export default function Contact() {
             <div className="flex gap-4">
               <PhoneIcon className="h-6 w-6 text-muted-foreground" />
               <a href="+14709451965" className="text-sm font-medium">
-                (470) 945-1965</a>
+                (470) 945-1965
+              </a>
             </div>
             <div className="flex gap-4">
               <MapPinIcon className="h-6 w-6 text-muted-foreground" />
               <a
-                href="https://www.google.com/maps/place/Kashlan+Law,+LLC/@34.0373542,-84.3305827,15z/data=!4m6!3m5!1s0x88f575295e837e17:0x88b8b2f612c6279e!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11w2y6rbb4?entry=ttu" 
+                href="https://www.google.com/maps/place/Kashlan+Law,+LLC/@34.0373542,-84.3305827,15z/data=!4m6!3m5!1s0x88f575295e837e17:0x88b8b2f612c6279e!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11w2y6rbb4?entry=ttu"
                 className="text-sm font-medium"
               >
                 Kashlan Law
