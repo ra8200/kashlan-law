@@ -141,8 +141,8 @@ export default function ContactForm() {
               includes SMS messages for appointment scheduling, appointment
               reminders, post-visit instructions, lab notifications, and billing
               notifications. Message frequency varies. Message and data rates
-              may apply. See privacy policy at www.kash.law/legal. Message HELP
-              for help. Reply STOP to any message to opt out.
+              may apply. See privacy policy at www.kash.law/privacy-policy.
+              Message HELP for help. Reply STOP to any message to opt out.
             </label>
           </div>
           <Button type="submit" className="bg-secondary">
