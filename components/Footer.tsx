@@ -41,9 +41,11 @@ export default function Footer() {
             >
               Kashlan Law
               <br />
-              1560 Warsaw Road
+              1355 Terrell Mill Road
               <br />
-              Roswell, GA 30076
+              Building 1480 Suite 200
+              <br />
+              Marietta, GA 30067
             </a>
           </div>
         </div>

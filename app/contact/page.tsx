@@ -41,9 +41,11 @@ export default function Contact() {
               >
                 Kashlan Law
                 <br />
-                1560 Warsaw Road
+                1355 Terrell Mill Road
                 <br />
-                Roswell, Georgia 30076
+                Building 1480, Suite 200
+                <br />
+                Marietta, Georgia 30067
               </a>
             </div>
             <div className="flex gap-4">

@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
             <p>
               Kashlan Law LLC
               <br />
-              1560 Warsaw Road, Roswell, GA 30076
+              1355 Terrell Mill Road, Building 1480 Suite 200, Marietta, GA 30067 
               <br />
               (470) 945-1965
             </p>
