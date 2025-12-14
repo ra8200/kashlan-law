@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
+<<<<<<< HEAD
 /* Design tokens */
+=======
+/* Design tokens (keep as-is) */
+>>>>>>> e418a3cbcb2a4016aec6736f656395725615e431
 :root {
   --background: 0 0% 100%;
   --foreground: 224 71.4% 4.1%;
@@ -56,7 +60,11 @@
   --chart-5: 340 75% 55%;
 }
 
+<<<<<<< HEAD
 /* Make Tailwind utilities like bg-background / border-border exist */
+=======
+/* Tailwind v4: expose tokens as Tailwind theme colors */
+>>>>>>> e418a3cbcb2a4016aec6736f656395725615e431
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
