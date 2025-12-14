@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <MapPinIcon className="h-5 w-5" />
             <a
-              href="https://www.google.com/maps/place/Kashlan+Law,+LLC/@34.0373542,-84.3305827,15z/data=!4m6!3m5!1s0x88f575295e837e17:0x88b8b2f612c6279e!8m2!3d34.0373559!4d-84.3310509!16s%2Fg%2F11w2y6rbb4?entry=ttu"
+              href="https://www.google.com/maps/place/1355+Terrell+Mill+Rd+bldg+1480+Ste+200,+Marietta,+GA+30067/@33.9174294,-84.4650282,17z/data=!3m1!4b1!4m6!3m5!1s0x88f511bdf980d825:0xa63978ee19abd377!8m2!3d33.9174294!4d-84.4650282!16s%2Fg%2F11v150j3n4?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D"
               className="hover:underline"
             >
               Kashlan Law
