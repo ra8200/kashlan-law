@@ -45,7 +45,7 @@ export default function NavBar() {
           <Image
             src="/klLogo.png"
             height={40}
-            width={40}
+            width={48}
             alt="Kabob Law Logo"
             className="w-12 h-10 rounded"
           />

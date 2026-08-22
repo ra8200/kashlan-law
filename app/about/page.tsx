@@ -28,7 +28,7 @@ export default function About() {
               alt="Kareem A. Kashlan"
               src="/kareem1.png"
               width={500}
-              height={500}
+              height={748}
               className="rounded-md"
             />
           </div>

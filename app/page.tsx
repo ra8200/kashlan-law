@@ -64,13 +64,13 @@ export default function Home() {
                 <Image
                   src="/kareem.png"
                   width={400}
-                  height={400}
+                  height={345}
                   alt="About Us"
                   className="rounded-lg"
                 />
                 <div className="flex justify-center items-center gap-8 mt-4">
                   <Image src="/GACDL.png" width={64} height={64} alt="GACDL" />
-                  <Image src="/GTLA.png" width={188} height={64} alt="GTLA" />
+                  <Image src="/GTLA.png" width={188} height={27} alt="GTLA" />
                 </div>
               </div>
             </div>
